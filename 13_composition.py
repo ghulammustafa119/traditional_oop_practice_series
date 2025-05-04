@@ -4,19 +4,17 @@
 
 
 
-
-class Engine():
+class Engine:
     def start(self):
         print("Engine has started.")
 
-class Car():
-    def __init__(self, engine):
-        self.engine = engine
+class Car:
+    def __init__(self):
+        self.engine = Engine()  
 
     def start_car(self):
         print("Starting the car...")
         self.engine.start()
 
-engine_obj = Engine()
-car_obj = Car(engine_obj)
+car_obj = Car()
 car_obj.start_car()
