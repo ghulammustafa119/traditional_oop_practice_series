@@ -11,7 +11,7 @@ class Book():
     def increment_book_count(cls):
         cls.total_books += 1
     def __init__(self):
-        Book.increment_book_count()
+        self.increment_book_count()
 new_book1 = Book()
 new_book2 = Book()
 new_book3 = Book()
